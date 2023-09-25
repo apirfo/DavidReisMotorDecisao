@@ -1,0 +1,54 @@
+.diagram_item_container{
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid black;
+    text-align: center;
+}
+.diagram_item_container input{
+    width: 100%;
+}
+.diagram_start_end_rectangle_border{
+    margin: auto;
+    width: fit-content;
+    padding: 1em;
+    border: 2px solid blue;
+    border-radius: 1em;
+    background-color: azure;
+}
+
+#diagram_start img{
+    max-height: 3em;
+}
+
+.add_block_container{
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+    border: 1px dashed black;
+}
+.add_block{
+    margin: auto;
+    width: 1.6em;
+    height: 1.6em;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: beige;
+    cursor: pointer;
+}
+.add_block_container img{
+    font-size: 1em;
+}
+
+.decision_block_diamond_border{
+    display: inline-block;
+    width: 5em;
+    height: 5em;
+    border: 2px solid blue;
+    background-color: azure;
+    rotate: 45deg;
+}
+
+.span_yes{
+    position: absolute;
+    margin-left: 0.5em;
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Decision Engine</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- font-awesome core css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- Diagram styles for this template -->
+  <link href="css/diagram.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="" />
+            <span>
+              Decision Engine
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/alexandrepirfo/" target="_blank"> Alexandre </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.free-css.com/free-css-templates/page296/spering" target="_blank">Template </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="custom_menu-btn ">
+              <button>
+                <span class=" s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- START DIAGRAM SECTION -->
+  <section class="experience_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="img-box">
+            <h3>David Reis</h3>
+            <h1>Decision Engine Builder</h1>
+            <p>Helping you build your business faster and smarter.</p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Decision Engine Diagram
+              </h2>
+            </div>
+            <p>
+              Create you Decision Engine by dragging th 
+            </p>
+
+            
+            <div id="decision_engine_diagram">
+
+              <!-- START DIAGRAM START SECTION -->
+              <div id="diagram_start" class="container diagram_item_container">
+                <div class="row">
+                  <div class="col-md-3 col-lg-2">
+                    <div class="diagram_start_end_rectangle_border">START</div>
+                    <i class="fa-solid fa-arrow-down fa-2xl"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- END DIAGRAM START SECTION -->
+
+
+              <!-- START DIAGRAM FIXED ADD BLOCK SECTION -->
+              <div id="fixed_add_block_container" class="container add_block_container">
+                <div class="add_block">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <!-- END DIAGRAM FIXED ADD BLOCK SECTION -->
+
+
+              <!-- START DECISION BLOCKS SECTION -->
+              <div id="diagram_decision_blocks" class="">
+                <div id="decision_block_container-1" class="decision_block_container">
+
+                  <div id="" class="container diagram_item_container">
+                    <div class="row">
+                      <div class="col-md-3 col-lg-2">
+                        <div class="decision_block">
+                          <div class="decision_block_diamond_border"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-1 col-lg-1">
+                        <i class="fa-solid fa-arrow-right fa-2xl"></i>No
+                      </div>
+                      <div class="col-md-3 col-lg-2">
+                        <div class="diagram_start_end_rectangle_border">DECISION=FALSE</div>
+                      </div>
+                      <div class="col-md-5 col-lg-5S">
+
+                        <div id="" class="container-fluid">
+                          <div class="row">
+                            <div class="col-4">
+                              <label for="variable_name_input">Variable Name:</label><br/>
+                              <input type="text" id="variable_name_input" name="variable_name_input" placeholder="Type here">
+                            </div>
+                            <div class="col-4">
+                              <label for="comparison_operator_input">Comparison Operator</label><br/>
+                            <select name="comparison_operator_input" id="comparison_operator_input">
+                              <option value="equal">=</option>
+                              <option value="lesser"><</option>
+                              <option value="lesser_or_equal"><=</option>
+                              <option value="greater_or_equal">>=</option>
+                              <option value="greater">></option>
+                            </select>
+                            </div>
+                            <div class="col-4">
+                              <label for="reference_value_input">Reference Value:</label><br/>
+                              <input type="nmber" id="reference_value_input" name="reference_value_input" placeholder="Type here">
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3 col-lg-2">
+                        <i class="fa-solid fa-arrow-down fa-2xl"></i><span class="span_yes">Yes</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="fixed_add_block_container" class="container add_block_container add_block_after_container">
+                    <div class="add_block">
+                      <i class="fa-solid fa-plus"></i>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- END DECISION BLOCKS SECTION -->
+              
+
+              <!-- START DIAGRAM START SECTION -->
+              <div id="diagram_end" class="container diagram_item_container">
+                <div class="row">
+                  <div class="col-md-3 col-lg-2">
+                    <div class="diagram_start_end_rectangle_border">DECISION=TRUE</div>
+                  </div>
+                </div>
+              </div>
+              <!-- END DIAGRAM START SECTION -->
+              
+              
+            <div class="btn-box">
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END DIAGRAM SECTION -->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_top">
+          <div class="info_logo">
+            <img src="images/logo.png" alt="" />
+            <span>
+              Spering
+            </span>
+          </div>
+          <div class="social_box">
+            <a href="#">
+              <img src="images/fb.png" alt="">
+            </a>
+            <a href="#">
+              <img src="images/twitter.png" alt="">
+            </a>
+            <a href="#">
+              <img src="images/linkedin.png" alt="">
+            </a>
+            <a href="#">
+              <img src="images/instagram.png" alt="">
+            </a>
+            <a href="#">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-3 col-lg-2">
+              <div class="info_link-box">
+                <h5>
+                  Useful Link
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="" href="about.html">About </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="work.html">Work </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="category.html">Category </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 ">
+              <h5>
+                Offices
+              </h5>
+              <p>
+                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 offset-lg-1">
+              <h5>
+                Information
+              </h5>
+              <p>
+                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
+              </p>
+            </div>
+
+            <div class="col-md-3  offset-lg-1">
+              <div class="info_form ">
+                <h5>
+                  Newsletter
+                </h5>
+                <form action="">
+                  <input type="email" placeholder="Email">
+                  <button>
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="info_contact layout_padding2">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/location.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Location
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/mail.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        demo@gmail.com
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="images/call.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Call +01 1234567890
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        &copy; <span id="displayDate"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- end  footer section -->
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/diagram.js"></script>
+
+</body>
+
+</html>
