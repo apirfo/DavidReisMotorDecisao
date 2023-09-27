@@ -1,5 +1,11 @@
+#main_row_diagram_section  {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: start;
+  }
+
 .diagram_item_container{
-    padding: 1em;
+    padding: 2em;
     margin-bottom: 1em;
     border: 1px solid black;
     text-align: center;
@@ -14,6 +20,15 @@
     border: 2px solid blue;
     border-radius: 1em;
     background-color: azure;
+}
+.diagram_result_false_rectangle_border{
+    position: absolute;
+    padding: 1em;
+    border: 2px solid blue;
+    border-radius: 1em;
+    background-color: azure;
+    top: 10%;
+    right: -300%;
 }
 
 #diagram_start img{
@@ -40,6 +55,7 @@
 }
 
 .decision_block_diamond_border{
+    position: relative;
     display: inline-block;
     width: 5em;
     height: 5em;
@@ -48,7 +64,13 @@
     rotate: 45deg;
 }
 
-.span_yes{
+.arrow_right_yes_decision{
     position: absolute;
-    margin-left: 0.5em;
+    bottom: -39%;
+    right: 1%;
+}
+.arrow_right_no_decision{
+    position: absolute;
+    top: 33%;
+    right: -79%;
 }

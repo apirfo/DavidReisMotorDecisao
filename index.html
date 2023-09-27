@@ -35,8 +35,8 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
-            <span>
+            <img src="images/gear_icon_design vector_3665913.png" alt="png image from pngtree.com-(https://pngtree.com/freepng/gear-icon-design-vector_3665913.html)" />
+            <span id="logo_text">
               Decision Engine
             </span>
           </a>
@@ -83,13 +83,25 @@
   <!-- START DIAGRAM SECTION -->
   <section class="experience_section layout_padding">
     <div class="container-fluid">
-      <div class="row">
+      <div id="main_row_diagram_section" class="row">
         <div class="col-md-5">
           <div class="img-box">
             <h3>David Reis</h3>
             <h1>Decision Engine Builder</h1>
             <p>Helping you build your business faster and smarter.</p>
           </div>
+          <div id="decision_block_instructions_container">
+            <div>
+              <p>Click and drag the decision model bellow to the intended position on the diagram.</p>
+            </div>
+            <div class="decision_block">
+              <div class="decision_block_diamond_border"></div>
+              <span class="arrow_right_no_decision"><i class="fa-solid fa-arrow-right fa-2xl"></i>No</span>
+              <span class="arrow_right_yes_decision"><i class="fa-solid fa-arrow-down fa-2xl"></i><span class="span_yes">Yes</span></span>
+              <div class="diagram_result_false_rectangle_border">DECISION=FALSE</div>
+            </div>
+          </div>
+          
         </div>
         <div class="col-md-7">
           <div class="detail-box">
@@ -135,16 +147,12 @@
                       <div class="col-md-3 col-lg-2">
                         <div class="decision_block">
                           <div class="decision_block_diamond_border"></div>
+                          <span class="arrow_right_no_decision"><i class="fa-solid fa-arrow-right fa-2xl"></i>No</span>
+                          <span class="arrow_right_yes_decision"><i class="fa-solid fa-arrow-down fa-2xl"></i><span class="span_yes">Yes</span></span>
+                          <div class="diagram_result_false_rectangle_border">DECISION=FALSE</div>
                         </div>
                       </div>
-                      <div class="col-md-1 col-lg-1">
-                        <i class="fa-solid fa-arrow-right fa-2xl"></i>No
-                      </div>
-                      <div class="col-md-3 col-lg-2">
-                        <div class="diagram_start_end_rectangle_border">DECISION=FALSE</div>
-                      </div>
-                      <div class="col-md-5 col-lg-5S">
-
+                      <div class="col-md-5 col-lg-5 offset-3">
                         <div id="" class="container-fluid">
                           <div class="row">
                             <div class="col-4">
@@ -170,11 +178,11 @@
                         
                       </div>
                     </div>
-                    <div class="row">
+                    <!--<div class="row">
                       <div class="col-md-3 col-lg-2">
                         <i class="fa-solid fa-arrow-down fa-2xl"></i><span class="span_yes">Yes</span>
                       </div>
-                    </div>
+                    </div>-->
                   </div>
 
                   <div id="fixed_add_block_container" class="container add_block_container add_block_after_container">
